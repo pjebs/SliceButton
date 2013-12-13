@@ -1,7 +1,6 @@
 Purpose
 --------------
 
-
 SliceButton is a button that is shaped like a pie/pizza and sliced up
 according to the number in the *buttons* property. It supports user-input and responds
 to any touches by firing the delegate **sliceButtonTapped:buttonIndex:** method
@@ -9,7 +8,7 @@ with information about which 'slice' was touched.
 The button itself only represents half of a pie/pizza (either left or right half).
 You can use two buttons to form a full pie/pizza.
 
-
+![Screen shot of SliceButton](https://raw.github.com/pjebs/SliceButton/master/screenshot.png)
 
 Supported OS & SDK Versions
 -----------------------------
@@ -20,7 +19,7 @@ Supported OS & SDK Versions
 ARC Compatibility
 ------------------
 
-GameTimer requires ARC.
+SliceButton requires ARC.
 
 If you wish to convert your whole project to ARC, then run the Edit > Refactor > Convert to Objective-C ARC... tool in Xcode and make sure all files that you wish to use ARC for are checked.
 
@@ -103,10 +102,8 @@ by selected=0...
 
     @property (nonatomic) int selected; //-1 = none
 
-This represents how far inwards the *dot_image* is drawn based. A value of 0
-will center the center of the *dot_image* at the outer-edge (as determined by
-*big_radius*). The larger the *dot_image_radius_offset* property is, the more inward
-*dot_image* gets drawn.
+This represents how far inwards the *dot_image* is drawn relative to the outer edge. A value of 0 will center the center of the *dot_image* at the outer-edge (as determined by
+*big_radius*). The larger the *dot_image_radius_offset* property is, the more inward *dot_image* gets drawn.
 
     @property (nonatomic) float dot_image_radius_offset;
 
