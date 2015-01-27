@@ -13,15 +13,8 @@ You can use two buttons to form a full pie/pizza.
 Supported OS & SDK Versions
 -----------------------------
 
-* Supported build target - iOS 7.0 
+* Supported build target - iOS 7.0+ 
 * Earliest supported deployment target - iOS 4.0 
-
-ARC Compatibility
-------------------
-
-SliceButton requires ARC.
-
-If you wish to convert your whole project to ARC, then run the Edit > Refactor > Convert to Objective-C ARC... tool in Xcode and make sure all files that you wish to use ARC for are checked.
 
 
 Installation
@@ -159,7 +152,7 @@ The Example Project will showcase how to use the button and also respond to use 
 Any Questions
 ---------------
 
-Feel Free to suggest improvements, fork, report bugs or ask any questions.
+If you found this library useful, please **Star** it on github. Feel free to fork or provide pull requests. Any bug reports will be warmly received.
 
 PJ Engineering and Business Solutions Pty. Ltd
 http://www.pjebs.com.au

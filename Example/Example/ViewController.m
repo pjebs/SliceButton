@@ -58,8 +58,20 @@
 {
     [super viewWillAppear:animated];
     
-    float h = self.view.bounds.size.width; //Length of Superview
-    float w = self.view.bounds.size.height; //Width of Superview
+    float h;
+    float w;
+    
+    if ([[[UIDevice currentDevice] systemVersion] compare:@"8" options:NSNumericSearch] != NSOrderedAscending)
+    {
+        h = self.view.bounds.size.height; //Length of Superview
+        w = self.view.bounds.size.width; //Width of Superview
+    }
+    else
+    {
+        h = self.view.bounds.size.width; //Length of Superview
+        w = self.view.bounds.size.height; //Width of Superview
+    }
+    
     float r = DEFAULT_BIG_RADIUS; //radius of Left/Right Controls
     
     //Arrange Left and Right SliceButtons
