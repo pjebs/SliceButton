@@ -20,6 +20,11 @@ Supported OS & SDK Versions
 Installation
 --------------
 
+### CocoaPods
+
+pod 'SliceButton', '~> 1.0'
+
+
 To install SliceButton into your app, drag the **SliceButton.h** and **SliceButton.m** files into your project.
 
 Add:
