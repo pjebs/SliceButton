@@ -24,6 +24,7 @@ Installation
 
 pod 'SliceButton', '~> 1.0'
 
+### Standard
 
 To install SliceButton into your app, drag the **SliceButton.h** and **SliceButton.m** files into your project.
 
